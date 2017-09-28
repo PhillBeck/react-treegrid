@@ -1,0 +1,32 @@
+{
+  "name": "react-treegrid",
+  "version": "1.0.0",
+  "description": "React TreeGrid Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhillBeck/react-treegrid.git"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "react": "^15.6.1"
+  },
+  "keywords": [
+    "react",
+    "gridtree"
+  ],
+  "author": {
+    "name": "Phillip Beck",
+    "email": "phillipcbeck@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhillBeck/react-treegrid/issues"
+  },
+  "homepage": "https://github.com/PhillBeck/react-treegrid#readme"
+}
