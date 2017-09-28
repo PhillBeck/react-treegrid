@@ -2,7 +2,7 @@
   "name": "react-treegrid",
   "version": "1.0.0",
   "description": "React TreeGrid Component",
-  "main": "lib/index.jsx",
+  "main": "lib/index.js",
   "scripts": {
     "test": "react-scripts test --env=jsdom",
     "build": "babel src/ -d lib"
