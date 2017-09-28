@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './custom.css';
+import '../static/custom.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import Header from './Header'
 import Body from './Body'

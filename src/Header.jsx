@@ -1,5 +1,5 @@
 import React from 'react';
-import './custom.css'
+import '../static/custom.css'
 
 export default (props) => {
     return <thead>
