@@ -1,5 +1,5 @@
 {
-  "name": "react-treegrid",
+  "name": "react-gridtree",
   "version": "1.0.0",
   "description": "React TreeGrid Component",
   "main": "lib/index.js",
@@ -34,7 +34,9 @@
   },
   "keywords": [
     "react",
-    "gridtree"
+    "gridtree",
+    "treegrid",
+    "grid"
   ],
   "author": {
     "name": "Phillip Beck",
