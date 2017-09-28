@@ -4,7 +4,8 @@
   "description": "React TreeGrid Component",
   "main": "lib/index.jsx",
   "scripts": {
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
+    "build": "babel src/ -d lib"
   },
   "repository": {
     "type": "git",
