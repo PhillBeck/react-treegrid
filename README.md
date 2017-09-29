@@ -57,5 +57,4 @@ Usage
 ----
 
 
-[Live Demo](https://phillbeck.github.io/react-gridtree-example/)
------
+An example project can be found at [react-gridtree-example](https://github.com/PhillBeck/react-gridtree-example)
