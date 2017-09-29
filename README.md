@@ -51,9 +51,11 @@ Usage
 
 
 > **Notes:**
-
 > - Styling not yet supported
 > - The **children** attribute is reserved for the objects that will be shown inside the parent
 
 ----
-![](https://i.imgur.com/pc1lvM4.png)
+
+
+[Live Demo](https://phillbeck.github.io/react-gridtree-example/)
+-----
