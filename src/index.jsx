@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../static/custom.css';
-import 'bootstrap/dist/css/bootstrap.css'
+import '../static/bootstrap.min.css'
 import Header from './Header'
 import Body from './Body'
 

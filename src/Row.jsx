@@ -1,5 +1,5 @@
 import React from 'react';
-import 'font-awesome/css/font-awesome.css'
+import '../static/font-awesome.min.css'
 import '../static/custom.css'
 
 const LEVEL_OFFSET = 16
