@@ -3,15 +3,18 @@ import '../static/custom.css'
 
 export default (props) => {
     return <thead>
-        <tr>            
-            {props.items.map((elem, i) => {
-                 if (elem === 'children') {
+        <tr> 
+            {props.options.fields.map((elem, i) => {
+                if (elem === 'children') {
                     return null
-                } 
+                }
 
-                return <th key={`header_${i}`} style={{width: props.columnsWidth[elem]}}>{elem}</th>
+                return (
+                    <th style={{width: elem.width}} key={`header_${i}`} >
+                       {elem.displayName}
+                    </th>
+                )
             })}
-
         </tr>
     </thead>
 }

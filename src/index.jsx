@@ -13,12 +13,20 @@ class TreeGrid extends Component {
     return Object.keys(this.props.data[0])
   }
 
-  render() {  
+  render() {
+    if (this.props.data) {
+      return (
+        <div className="center-text">
+          <h1><i className="fa fa-spinner fa-spin"></i></h1>
+        </div>
+      )
+    }
+
     return (
       <div>
         <table className="table table-striped table-hover">
-          <Header items={this.getHeaderElems()} columnsWidth={this.props.columnWidth}/>
-          <Body fields={this.getHeaderElems()} data={this.props.data} /> 
+          <Header options={this.props.options}/>
+          <Body data={this.props.data} options={this.props.options} /> 
         </table>
       </div>
     );

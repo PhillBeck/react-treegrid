@@ -99,12 +99,13 @@ class Body extends React.Component {
     render() {
         const rows = this.state.dataToDisplay.map((elem, i) =>
             <Row 
-            key={`row_${i}`}
-            fields={this.props.fields}
-            data={elem}
-            level={elem._level}
-            index={i}
-            onClick={this.clickHandler.bind(this)} />
+                key={`row_${i}`}
+                fields={this.props.options}
+                data={elem}
+                level={elem._level}
+                index={i}
+                onClick={this.clickHandler.bind(this)}
+            />
         )
 
         return (

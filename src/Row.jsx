@@ -40,8 +40,8 @@ class Row extends React.Component {
 
         var hasChildren = this.getExpandIcon(this.props.data, this.clickHandler.bind(this))
 
-        const items = this.props.fields.map((field, i) => {
-            if (field === 'children') {
+        const items = this.props.options.fields.map((field, i) => {
+            if (field.property === 'children') {
                 return null
             }
 
@@ -53,11 +53,11 @@ class Row extends React.Component {
             }
             
             return (
-                <td key={`${this.props.data._id}_${field}`} >
+                <td key={`${this.props.data._id}_${field.property}`} >
                     <div>
                         {offset}
                         {expandIcon}
-                        {"  " + (this.props.data[field] || '')}
+                        {"  " + (this.props.data[field.property] || '')}
                     </div>
                 </td>
             )

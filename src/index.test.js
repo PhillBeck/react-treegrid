@@ -29,10 +29,12 @@ it('renders without crashing', () => {
             Header3: 'text3.2'
         }
     ]}
-    columnWidth={{
-        Header1: "50%",
-        Header2: "25%",
-        Header3: "25%"
+    options={{
+        fields: [
+            {property: 'Header1', displayName: 'Header 1', width: '50%'},
+            {property: 'Header2', displayName: 'Header 2', width: '35%'},
+            {property: 'Header3', displayName: 'Header 3', width: '15%'},
+        ]
     }}
     />, div);
 });
