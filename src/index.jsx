@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../static/custom.css';
-import '../static/bootstrap.css'
 import Header from './Header'
 import Body from './Body'
 
