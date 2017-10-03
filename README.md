@@ -6,8 +6,7 @@ React GridTree is a react component built to easily render a table showing the p
 Check out the [example project](https://github.com/PhillBeck/react-gridtree-example) and the [live demo](https://phillbeck.github.io/react-gridtree-example/)
 
 
-![]
-(https://i.imgur.com/P2QesHh.png)
+![](https://i.imgur.com/P2QesHh.png)
 
 
 Installation
