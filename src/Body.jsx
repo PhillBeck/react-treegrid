@@ -100,7 +100,7 @@ class Body extends React.Component {
         const rows = this.state.dataToDisplay.map((elem, i) =>
             <Row 
                 key={`row_${i}`}
-                fields={this.props.options}
+                options={this.props.options}
                 data={elem}
                 level={elem._level}
                 index={i}

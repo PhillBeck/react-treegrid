@@ -14,15 +14,7 @@ class TreeGrid extends Component {
   }
 
   render() {
-    if (this.props.data) {
-      return (
-        <div className="center-text">
-          <h1><i className="fa fa-spinner fa-spin"></i></h1>
-        </div>
-      )
-    }
-
-    return (
+   return (
       <div>
         <table className="table table-striped table-hover">
           <Header options={this.props.options}/>

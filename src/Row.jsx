@@ -8,6 +8,7 @@ class Row extends React.Component {
     constructor(props) {
         super(props)
         this.getExpandIcon = this.getExpandIcon.bind(this)
+        this.getContent = this.getContent.bind(this)
     }
 
     getExpandIcon(data, clickHandler) {
@@ -30,6 +31,21 @@ class Row extends React.Component {
 
     getIndent(level) {
         return <span className="treegrid-indent" style={{width: level * LEVEL_OFFSET}}></span>
+    }
+
+    getContent(field) {
+        var format = field.format
+	var property = field.property
+
+        if (format && typeof format === 'function') {
+            return format(this.props.data[property])
+        }
+
+        if (this.props.data[property] === null || this.props.data[property] === undefined) {
+            return ''
+        }
+
+        return this.props.data[property]
     }
 
 
@@ -57,7 +73,7 @@ class Row extends React.Component {
                     <div>
                         {offset}
                         {expandIcon}
-                        {"  " + (this.props.data[field.property] || '')}
+                        {this.getContent(field)}
                     </div>
                 </td>
             )
