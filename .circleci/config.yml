@@ -4,13 +4,11 @@
 #
 version: 2
 jobs:
-  test:
+  build:
     docker:
       - image: node:8.0
 
     steps:
-      - run:
-          name: "Checking Versions"
       - checkout
 
       - restore_cache:
