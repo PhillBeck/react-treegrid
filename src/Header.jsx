@@ -1,5 +1,6 @@
 import React from 'react';
 import '../static/custom.css'
+import uuid from 'uuid'
 
 export default (props) => {
     return <thead>
@@ -10,7 +11,7 @@ export default (props) => {
                 }
 
                 return (
-                    <th style={{width: elem.width}} key={`header_${i}`} >
+                    <th style={{width: elem.width}} key={`header_${i}_${uuid.v4()}`} >
                        {elem.displayName}
                     </th>
                 )

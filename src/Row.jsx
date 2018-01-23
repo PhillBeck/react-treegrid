@@ -1,5 +1,6 @@
 import React from 'react';
 import '../static/custom.css'
+import UUID from 'uuid'
 
 const LEVEL_OFFSET = 16
 
@@ -69,7 +70,7 @@ class Row extends React.Component {
             }
             
             return (
-                <td key={`${this.props.data._id}_${field.property}`} >
+                <td key={`${this.props.data._id}_${field.property}_${UUID.v4()}`} >
                     <div>
                         {offset}
                         {expandIcon}
