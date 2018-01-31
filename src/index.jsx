@@ -13,6 +13,10 @@ class TreeGrid extends Component {
     return Object.keys(this.props.data[0])
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.forceUpdate()
+  }
+
   render() {
    return (
       <div>
