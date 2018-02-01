@@ -63,9 +63,8 @@ class Body extends React.Component {
 
     componentWillReceiveProps(nextProps) {
         if (!equal(this.props, nextProps)) {
-            this.flattenArray(nextProps.data)
-	    this.forceUpdate()
-        }
+            this.setState({dataToDisplay: this.flattenArray(nextProps.data)})
+	}
     }
 
     flattenArray(DataArray, parent, returnArray) {
