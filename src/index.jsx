@@ -18,6 +18,9 @@ class TreeGrid extends Component {
   }
 
   render() {
+  if (this.props.loading) {
+    return ( <div></div> )
+  }
    return (
       <div>
         <table className="table table-striped table-hover">
