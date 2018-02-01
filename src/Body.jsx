@@ -1,6 +1,7 @@
 import React from 'react'
 import Row from './Row'
 import UUID from 'uuid'
+import equal from 'deep-equal'
 
 class Body extends React.Component {
 
@@ -61,8 +62,9 @@ class Body extends React.Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        if (this.props !== nextProps) {
+        if (!equal(this.props, nextProps)) {
             this.flattenArray(nextProps.data)
+	    this.forceUpdate()
         }
     }
 
